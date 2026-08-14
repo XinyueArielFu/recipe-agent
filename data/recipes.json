@@ -1,6 +1,7 @@
 [
 {
   "recipe_id": "R0200",
+  "source": "mom",
   "name_zh": "椰子冻",
   "name_en": "Coconut Jelly",
   "tags_zh": ["甜品", "椰子", "果冻", "冷饮类", "点心", "甜"],
@@ -26,6 +27,7 @@
 },
 {
   "recipe_id": "R0700",
+  "source": "mom",
   "name_zh": "卤鸭",
   "name_en": "braised duck",
   "tags_zh": ["菜", "鸭", "卤制", "红烧", "热菜", "咸"],
@@ -49,6 +51,7 @@
 },
 {
   "recipe_id": "R0800",
+  "source": "mom",
   "name_zh": "芒果盒子",
   "name_en": "mango box",
   "tags_zh": ["甜品", "芒果", "可丽饼", "蛋糕", "点心", "奶油", "甜", "水果", "碳水"],
@@ -71,6 +74,7 @@
 },
 {
   "recipe_id": "R0801",
+  "source": "mom",
   "name_zh": "原味千层蛋糕皮",
   "name_en": "original crepe",
   "tags_zh": ["甜品", "可丽饼", "蛋糕", "点心", "甜", "碳水"],
@@ -95,6 +99,7 @@
 },
 {
   "recipe_id": "R0803",
+  "source": "mom",
   "name_zh": "抹茶味千层蛋糕皮",
   "name_en": "matcha flavored crepe",
   "tags_zh": ["甜品", "可丽饼", "蛋糕", "点心", "抹茶", "甜", "碳水"],
@@ -114,6 +119,7 @@
 },
 {
   "recipe_id": "R0804",
+  "source": "mom",
   "name_zh": "巧克力味千层蛋糕皮",
   "name_en": "chocolate flavored crepe",
   "tags_zh": ["甜品", "可丽饼", "蛋糕", "点心", "巧克力", "甜", "碳水"],
@@ -133,6 +139,7 @@
 },
 {
   "recipe_id": "R0802",
+  "source": "mom",
   "name_zh": "奶油",
   "name_en": "cream",
   "tags_zh": ["甜品", "蛋糕", "奶油", "点心", "甜"],
@@ -153,6 +160,7 @@
 },
 {
   "recipe_id": "R0900",
+  "source": "mom",
   "name_zh": "肉松小贝",
   "name_en": "pork song cake",
   "tags_zh": ["甜品", "咸甜", "肉松", "蛋糕", "点心", "咸", "甜", "碳水"],
@@ -174,6 +182,7 @@
 },
 {
   "recipe_id": "R1000",
+  "source": "mom",
   "name_zh": "四寸戚风蛋糕",
   "name_en": "4-inch chiffon cake",
   "tags_zh": ["甜品", "蛋糕", "点心", "甜", "碳水"],
@@ -200,6 +209,7 @@
 }, 
 {
   "recipe_id": "R1500",
+  "source": "mom",
   "name_zh": "雪花酥",
   "name_en": "Snowflake Crisp",
   "tags_zh": ["甜品", "咸甜", "糖果", "点心", "咸", "甜", "碳水"],
@@ -224,6 +234,7 @@
 },
 {
   "recipe_id": "R1900",
+  "source": "mom",
   "name_zh": "四寸巴斯克蛋糕",
   "name_en": "4-inch Basque cake",
   "tags_zh": ["甜品", "蛋糕", "奶油", "奶酪", "点心", "甜"],
@@ -250,6 +261,7 @@
 },
 {
   "recipe_id": "R2200",
+  "source": "mom",
   "name_zh": "雪梅娘",
   "name_en": "cream mochi",
   "tags_zh": ["甜品", "糯米", "奶油", "点心", "甜", "水果", "碳水"],
@@ -272,6 +284,7 @@
 },
 {
   "recipe_id": "R2201",
+  "source": "mom",
   "name_zh": "麻薯",
   "name_en": "mochi",
   "tags_zh": ["甜品", "糯米", "奶油", "点心", "甜", "碳水"],
@@ -295,6 +308,7 @@
 },
 {
   "recipe_id": "R2300",
+  "source": "mom",
   "name_zh": "黄油曲奇",
   "name_en": "butter cookie",
   "tags_zh": ["甜品", "黄油", "点心", "甜", "碳水"],
@@ -304,7 +318,7 @@
   "is_standalone_dish": true,
   "components": [],
   "cooking_stages": [
-    {"stage_order": 1, "tool_zh": "烤箱", "tool_en": "oven", "temperature_F": 280, "heat_level_zh": null, "heat_level_en": null, "duration_minutes": 10, "notes_zh": "预热烤箱至175°C，烘烤20分钟"}
+    {"stage_order": 1, "tool_zh": "烤箱", "tool_en": "oven", "temperature_F": 280, "heat_level_zh": null, "heat_level_en": null, "duration_minutes": 20, "notes_zh": "预热烤箱至280华氏度，烘烤20-30分钟"}
     ],
   "ingredients": [
     {"name_zh": "黄油", "name_en": "butter", "amount": 120, "unit": "g"},
@@ -316,11 +330,12 @@
     {"name_zh": "玉米淀粉", "name_en": "corn starch", "amount": 20, "unit": "g"},
     {"name_zh": "奶粉", "name_en": "milk powder", "amount": 15, "unit": "g"}
   ],
-  "steps_description": "1.将室温软化好的黄油打发至发白. \n2.加入糖搅打均匀. \n3.加入牛奶搅打均匀. \n4.最后加入所有分类搅打均匀. \n5. 在铺好烘焙纸的烤盘上用磨具, 或者分成小球用手指按扁 \n6.预热烤箱至175°C，烘烤20分钟.",
+  "steps_description": "1.将室温软化好的黄油打发至发白. \n2.加入糖搅打均匀. \n3.加入牛奶搅打均匀. \n4.最后加入所有分类搅打均匀. \n5. 在铺好烘焙纸的烤盘上用磨具, 或者分成小球用手指按扁 \n6.预热烤箱至280华氏度，烘烤20-30分钟.",
   "notes": "1. 没有奶油的话, 可以用牛奶代替, \n2.黄油一定要室温软化, 不能用微波炉加热成液态"
 },
 {
   "recipe_id": "R2400",
+  "source": "mom",
   "name_zh": "小酥肉",
   "name_en": "crispy pork strips",
   "tags_zh": ["热菜", "猪肉", "油炸", "咸", "酥脆","碳水", "蛋白质"],
@@ -331,7 +346,7 @@
   "components": [],
   "cooking_stages": [
     {"stage_order": 1, "tool_zh": "腌制", "tool_en": "marinade", "temperature_F": null, "heat_level_zh": null, "heat_level_en": null, "duration_minutes": 3, "notes_zh": "猪肉洗干净切条, 加入适量蚝油, 五香粉, 盐, 腌制20分钟"},
-    {"stage_order": 1, "tool_zh": "锅", "tool_en": "fried pot", "temperature_F": 280, "heat_level_zh": null, "heat_level_en": null, "duration_minutes": 3, "notes_zh": "油温七成热, 一根一根下锅炸, 定型后捞出, 再炸一次, 炸至金黄酥脆即可"}
+    {"stage_order": 2, "tool_zh": "锅", "tool_en": "fried pot", "temperature_F": 280, "heat_level_zh": null, "heat_level_en": null, "duration_minutes": 3, "notes_zh": "油温七成热, 一根一根下锅炸, 定型后捞出, 再炸一次, 炸至金黄酥脆即可"}
     ],
   "ingredients": [
     {"name_zh": "猪肉", "name_en": "pork", "amount": 300, "unit": "g"},
@@ -345,7 +360,8 @@
   "notes": "1. 油温可以插入木筷子, 筷子上冒泡, 就可以下锅啦"
 },
 {
-  "recipe_id": "R2400",
+  "recipe_id": "R2800",
+  "source": "mom",
   "name_zh": "油条",
   "name_en": "chinese churros",
   "tags_zh": ["热菜", "油炸", "咸", "酥脆", "碳水"],
@@ -360,7 +376,7 @@
   "ingredients": [
     {"name_zh": "低筋面粉", "name_en": "all-purpose flour", "amount": 500, "unit": "g"},
     {"name_zh": "油条粉", "name_en": "chinese churros powder", "amount": 20, "unit": "g"},
-    {"name_zh": "鸡蛋", "name_en": "egg", "amount": 1, "unit": "g"},
+    {"name_zh": "鸡蛋", "name_en": "egg", "amount": 1, "unit": "个"},
     {"name_zh": "盐", "name_en": "salt", "amount": 5, "unit": "g"},
     {"name_zh": "水", "name_en": "water", "amount": 260, "unit": "g"},
     {"name_zh": "油", "name_en": "oil", "amount": 20, "unit": "g"}
@@ -370,6 +386,7 @@
 },
 {
   "recipe_id": "R3300",
+  "source": "mom",
   "name_zh": "水蒸蛋",
   "name_en": "Steamed Egg",
   "tags_zh": ["热菜", "鸡蛋", "酱油", "咸", "蛋白质"],
