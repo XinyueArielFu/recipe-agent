@@ -61,7 +61,7 @@
   "is_standalone_dish": true,
   "components": ["R0801", "R0802"],
   "cooking_stages": [
-    {"stage_order": 1, "tool_zh": "不粘平底锅", "tool_en": "non-stick pan", "temperature_F": null, "heat_level_zh": null, "heat_level_en": null, "duration_minutes": null, "notes_zh": "把卤鸭放入锅中，加入所有调料和水，煮沸后转小火炖煮, 等筷子能轻松插入, 中火收汁反复淋在鸭子上"},
+    {"stage_order": 1, "tool_zh": "不粘平底锅", "tool_en": "non-stick pan", "temperature_F": null, "heat_level_zh": null, "heat_level_en": null, "duration_minutes": null, "notes_zh": "把面糊摊成薄饼，煎至冒大泡后翻面脱落"},
     {"stage_order": 2, "tool_zh": "盒子", "tool_en": "container", "temperature_F": null, "heat_level_zh": null, "heat_level_en": null, "duration_minutes": null, "notes_zh": "把原味千层蛋糕皮和奶油交替叠加，最后放上芒果块即可"}
   ],
   "ingredients": [
@@ -406,5 +406,355 @@
   ],
   "steps_description": "1.将鸡蛋打散，加入盐，加入温水, 搅拌均匀. \n2.将混合好的蛋液倒入蒸锅中，用中火蒸10分钟，关火后焖5分钟再开盖",
   "notes": "鸡蛋大小有差别, 但是记住水和鸡蛋的比例是2:1, 也就是鸡蛋液的两倍温水"
+},
+
+[
+{
+  "recipe_id": "C0001",
+  "source": "ai_generated",
+  "name_zh": "红烧肉",
+  "name_en": "Braised Pork Belly",
+  "tags_zh": ["菜", "猪肉", "红烧", "热菜", "咸", "甜咸"],
+  "tags_en": ["main dish", "pork", "braised", "hot dish", "salty", "salty and sweet"],
+  "difficulty": "median",
+  "servings": 4,
+  "is_standalone_dish": true,
+  "components": [],
+  "cooking_stages": [
+    {"stage_order": 1, "tool_zh": "锅", "tool_en": "pot", "temperature_F": null, "heat_level_zh": "大火", "heat_level_en": "high heat", "duration_minutes": 5, "notes_zh": "五花肉焯水后煎出油脂"},
+    {"stage_order": 2, "tool_zh": "锅", "tool_en": "pot", "temperature_F": null, "heat_level_zh": "小火", "heat_level_en": "low heat", "duration_minutes": 45, "notes_zh": "加调料小火慢炖至软烂"}
+  ],
+  "ingredients": [
+    {"name_zh": "五花肉", "name_en": "pork belly", "amount": 500, "unit": "g"},
+    {"name_zh": "生抽", "name_en": "light soy sauce", "amount": 30, "unit": "g"},
+    {"name_zh": "老抽", "name_en": "dark soy sauce", "amount": 15, "unit": "g"},
+    {"name_zh": "冰糖", "name_en": "rock sugar", "amount": 30, "unit": "g"},
+    {"name_zh": "料酒", "name_en": "rice wine", "amount": 30, "unit": "g"}
+  ],
+  "steps_description": "五花肉切块焯水，锅中煎出油脂后加入调料和水，小火慢炖45分钟至软烂即可。",
+  "notes": null
+},
+{
+  "recipe_id": "C0002",
+  "source": "ai_generated",
+  "name_zh": "糖醋排骨",
+  "name_en": "Sweet and Sour Ribs",
+  "tags_zh": ["菜", "猪肉", "糖醋", "热菜", "甜咸"],
+  "tags_en": ["main dish", "pork", "sweet and sour", "hot dish", "salty and sweet"],
+  "difficulty": "median",
+  "servings": 4,
+  "is_standalone_dish": true,
+  "components": [],
+  "cooking_stages": [
+    {"stage_order": 1, "tool_zh": "锅", "tool_en": "pot", "temperature_F": null, "heat_level_zh": "中火", "heat_level_en": "medium heat", "duration_minutes": 20, "notes_zh": "排骨煎至两面金黄后加调料收汁"}
+  ],
+  "ingredients": [
+    {"name_zh": "排骨", "name_en": "pork ribs", "amount": 500, "unit": "g"},
+    {"name_zh": "白醋", "name_en": "white vinegar", "amount": 40, "unit": "g"},
+    {"name_zh": "糖", "name_en": "sugar", "amount": 40, "unit": "g"},
+    {"name_zh": "生抽", "name_en": "light soy sauce", "amount": 20, "unit": "g"}
+  ],
+  "steps_description": "排骨煎至两面金黄，加入糖醋汁小火收汁至粘稠即可。",
+  "notes": null
+},
+{
+  "recipe_id": "C0003",
+  "source": "ai_generated",
+  "name_zh": "宫保鸡丁",
+  "name_en": "Kung Pao Chicken",
+  "tags_zh": ["菜", "鸡肉", "热菜", "咸", "微辣"],
+  "tags_en": ["main dish", "chicken", "hot dish", "salty", "slightly spicy"],
+  "difficulty": "median",
+  "servings": 3,
+  "is_standalone_dish": true,
+  "components": [],
+  "cooking_stages": [
+    {"stage_order": 1, "tool_zh": "炒锅", "tool_en": "wok", "temperature_F": null, "heat_level_zh": "大火", "heat_level_en": "high heat", "duration_minutes": 8, "notes_zh": "快速翻炒鸡丁和花生米"}
+  ],
+  "ingredients": [
+    {"name_zh": "鸡胸肉", "name_en": "chicken breast", "amount": 300, "unit": "g"},
+    {"name_zh": "花生米", "name_en": "peanuts", "amount": 60, "unit": "g"},
+    {"name_zh": "干辣椒", "name_en": "dried chili", "amount": 10, "unit": "g"},
+    {"name_zh": "生抽", "name_en": "light soy sauce", "amount": 20, "unit": "g"}
+  ],
+  "steps_description": "鸡胸肉切丁腌制，大火快炒干辣椒和花生米后加入鸡丁翻炒均匀即可。",
+  "notes": null
+},
+{
+  "recipe_id": "C0004",
+  "source": "ai_generated",
+  "name_zh": "麻婆豆腐",
+  "name_en": "Mapo Tofu",
+  "tags_zh": ["菜", "豆腐", "热菜", "咸", "辣", "麻辣"],
+  "tags_en": ["main dish", "tofu", "hot dish", "salty", "spicy", "numbing"],
+  "difficulty": "easy",
+  "servings": 3,
+  "is_standalone_dish": true,
+  "components": [],
+  "cooking_stages": [
+    {"stage_order": 1, "tool_zh": "炒锅", "tool_en": "wok", "temperature_F": null, "heat_level_zh": "中火", "heat_level_en": "medium heat", "duration_minutes": 10, "notes_zh": "豆腐下锅煮至入味"}
+  ],
+  "ingredients": [
+    {"name_zh": "嫩豆腐", "name_en": "soft tofu", "amount": 400, "unit": "g"},
+    {"name_zh": "肉末", "name_en": "ground pork", "amount": 100, "unit": "g"},
+    {"name_zh": "豆瓣酱", "name_en": "chili bean paste", "amount": 30, "unit": "g"},
+    {"name_zh": "花椒粉", "name_en": "sichuan pepper powder", "amount": 5, "unit": "g"}
+  ],
+  "steps_description": "肉末炒香加入豆瓣酱，加水放入豆腐块煮10分钟，最后撒花椒粉即可。",
+  "notes": null
+},
+{
+  "recipe_id": "C0005",
+  "source": "ai_generated",
+  "name_zh": "番茄炒蛋",
+  "name_en": "Tomato and Egg Stir-fry",
+  "tags_zh": ["菜", "鸡蛋", "番茄", "热菜", "咸甜"],
+  "tags_en": ["main dish", "egg", "tomato", "hot dish", "salty and sweet"],
+  "difficulty": "easy",
+  "servings": 2,
+  "is_standalone_dish": true,
+  "components": [],
+  "cooking_stages": [
+    {"stage_order": 1, "tool_zh": "炒锅", "tool_en": "wok", "temperature_F": null, "heat_level_zh": "大火", "heat_level_en": "high heat", "duration_minutes": 6, "notes_zh": "鸡蛋炒散后加入番茄翻炒"}
+  ],
+  "ingredients": [
+    {"name_zh": "鸡蛋", "name_en": "egg", "amount": 3, "unit": "个"},
+    {"name_zh": "番茄", "name_en": "tomato", "amount": 2, "unit": "个"},
+    {"name_zh": "糖", "name_en": "sugar", "amount": 5, "unit": "g"},
+    {"name_zh": "盐", "name_en": "salt", "amount": 3, "unit": "g"}
+  ],
+  "steps_description": "鸡蛋打散炒熟盛出，番茄炒出汁水后加入鸡蛋和调料翻炒均匀即可。",
+  "notes": null
+},
+{
+  "recipe_id": "C0006",
+  "source": "ai_generated",
+  "name_zh": "抹茶提拉米苏",
+  "name_en": "Matcha Tiramisu",
+  "tags_zh": ["甜品", "抹茶", "奶油", "冷藏类", "点心", "甜"],
+  "tags_en": ["dessert", "matcha", "cream", "chilled", "snack", "sweet"],
+  "difficulty": "median",
+  "servings": 6,
+  "is_standalone_dish": true,
+  "components": [],
+  "cooking_stages": [
+    {"stage_order": 1, "tool_zh": "冰箱", "tool_en": "refrigerator", "temperature_F": 40, "heat_level_zh": null, "heat_level_en": null, "duration_minutes": 240, "notes_zh": "冷藏4小时以上定型"}
+  ],
+  "ingredients": [
+    {"name_zh": "马斯卡彭奶酪", "name_en": "mascarpone cheese", "amount": 250, "unit": "g"},
+    {"name_zh": "淡奶油", "name_en": "whipping cream", "amount": 200, "unit": "g"},
+    {"name_zh": "抹茶粉", "name_en": "matcha powder", "amount": 15, "unit": "g"},
+    {"name_zh": "手指饼干", "name_en": "ladyfingers", "amount": 200, "unit": "g"}
+  ],
+  "steps_description": "奶酪和奶油打发混合，与浸湿的手指饼干交替叠放，冷藏4小时后表面撒抹茶粉即可。",
+  "notes": null
+},
+{
+  "recipe_id": "C0007",
+  "source": "ai_generated",
+  "name_zh": "芋圆",
+  "name_en": "Taro Balls",
+  "tags_zh": ["甜品", "芋头", "糯米", "冷饮类", "点心", "甜"],
+  "tags_en": ["dessert", "taro", "sticky rice", "cold drink", "snack", "sweet"],
+  "difficulty": "median",
+  "servings": 6,
+  "is_standalone_dish": true,
+  "components": [],
+  "cooking_stages": [
+    {"stage_order": 1, "tool_zh": "蒸锅", "tool_en": "steamer", "temperature_F": 212, "heat_level_zh": null, "heat_level_en": null, "duration_minutes": 20, "notes_zh": "芋头蒸熟压泥"},
+    {"stage_order": 2, "tool_zh": "煮锅", "tool_en": "pot", "temperature_F": null, "heat_level_zh": "大火", "heat_level_en": "high heat", "duration_minutes": 8, "notes_zh": "揉好的芋圆下锅煮至浮起"}
+  ],
+  "ingredients": [
+    {"name_zh": "芋头", "name_en": "taro", "amount": 300, "unit": "g"},
+    {"name_zh": "木薯淀粉", "name_en": "tapioca starch", "amount": 100, "unit": "g"},
+    {"name_zh": "糖", "name_en": "sugar", "amount": 30, "unit": "g"}
+  ],
+  "steps_description": "芋头蒸熟压成泥，加糖和木薯淀粉揉成团，搓成小球，煮至浮起即可食用。",
+  "notes": "可以搭配椰浆或红糖水一起吃"
+},
+{
+  "recipe_id": "C0008",
+  "source": "ai_generated",
+  "name_zh": "红豆沙",
+  "name_en": "Sweet Red Bean Paste",
+  "tags_zh": ["甜品", "红豆", "馅料", "甜"],
+  "tags_en": ["dessert", "red bean", "filling", "sweet"],
+  "difficulty": "easy",
+  "servings": 10,
+  "is_standalone_dish": false,
+  "components": [],
+  "cooking_stages": [
+    {"stage_order": 1, "tool_zh": "锅", "tool_en": "pot", "temperature_F": null, "heat_level_zh": "小火", "heat_level_en": "low heat", "duration_minutes": 60, "notes_zh": "红豆小火慢煮至软烂后炒干水分"}
+  ],
+  "ingredients": [
+    {"name_zh": "红豆", "name_en": "red beans", "amount": 300, "unit": "g"},
+    {"name_zh": "糖", "name_en": "sugar", "amount": 100, "unit": "g"},
+    {"name_zh": "油", "name_en": "oil", "amount": 20, "unit": "g"}
+  ],
+  "steps_description": "红豆浸泡后小火煮至软烂，加糖和油翻炒至水分收干即可作为馅料使用。",
+  "notes": "可用作豆沙包、豆沙青团等的馅料"
+},
+{
+  "recipe_id": "C0009",
+  "source": "ai_generated",
+  "name_zh": "蛋挞",
+  "name_en": "Egg Tart",
+  "tags_zh": ["甜品", "蛋挞", "烘焙类", "点心", "甜"],
+  "tags_en": ["dessert", "egg tart", "baked", "snack", "sweet"],
+  "difficulty": "median",
+  "servings": 12,
+  "is_standalone_dish": true,
+  "components": [],
+  "cooking_stages": [
+    {"stage_order": 1, "tool_zh": "烤箱", "tool_en": "oven", "temperature_F": 425, "heat_level_zh": null, "heat_level_en": null, "duration_minutes": 20, "notes_zh": "烤箱预热至425华氏度，烘烤20分钟至表面焦斑"}
+  ],
+  "ingredients": [
+    {"name_zh": "淡奶油", "name_en": "whipping cream", "amount": 150, "unit": "g"},
+    {"name_zh": "牛奶", "name_en": "milk", "amount": 100, "unit": "g"},
+    {"name_zh": "鸡蛋", "name_en": "egg", "amount": 3, "unit": "个"},
+    {"name_zh": "糖", "name_en": "sugar", "amount": 50, "unit": "g"},
+    {"name_zh": "现成挞皮", "name_en": "tart shells", "amount": 12, "unit": "个"}
+  ],
+  "steps_description": "淡奶油、牛奶、鸡蛋、糖混合过筛，倒入挞皮中，烤箱425华氏度烘烤20分钟即可。",
+  "notes": null
+},
+{
+  "recipe_id": "C0010",
+  "source": "ai_generated",
+  "name_zh": "杨枝甘露",
+  "name_en": "Mango Pomelo Sago",
+  "tags_zh": ["甜品", "芒果", "水果", "冷饮类", "甜"],
+  "tags_en": ["dessert", "mango", "fruit", "cold drink", "sweet"],
+  "difficulty": "easy",
+  "servings": 4,
+  "is_standalone_dish": true,
+  "components": [],
+  "cooking_stages": [
+    {"stage_order": 1, "tool_zh": "煮锅", "tool_en": "pot", "temperature_F": null, "heat_level_zh": "中火", "heat_level_en": "medium heat", "duration_minutes": 15, "notes_zh": "西米煮至透明"},
+    {"stage_order": 2, "tool_zh": "冰箱", "tool_en": "refrigerator", "temperature_F": 40, "heat_level_zh": null, "heat_level_en": null, "duration_minutes": 120, "notes_zh": "冷藏2小时"}
+  ],
+  "ingredients": [
+    {"name_zh": "芒果", "name_en": "mango", "amount": 400, "unit": "g"},
+    {"name_zh": "西米", "name_en": "sago", "amount": 50, "unit": "g"},
+    {"name_zh": "椰浆", "name_en": "coconut milk", "amount": 200, "unit": "ml"},
+    {"name_zh": "淡奶油", "name_en": "whipping cream", "amount": 100, "unit": "g"}
+  ],
+  "steps_description": "西米煮至透明过冷水，芒果打成泥，与椰浆、淡奶油混合，冷藏后即可食用。",
+  "notes": null
+},
+{
+  "recipe_id": "C0011",
+  "source": "ai_generated",
+  "name_zh": "白切鸡",
+  "name_en": "White Cut Chicken",
+  "tags_zh": ["菜", "鸡肉", "冷菜", "咸", "清淡"],
+  "tags_en": ["main dish", "chicken", "cold dish", "salty", "light"],
+  "difficulty": "median",
+  "servings": 4,
+  "is_standalone_dish": true,
+  "components": [],
+  "cooking_stages": [
+    {"stage_order": 1, "tool_zh": "锅", "tool_en": "pot", "temperature_F": null, "heat_level_zh": "中火煮沸转小火", "heat_level_en": "boil then low heat", "duration_minutes": 25, "notes_zh": "整鸡冷水下锅，煮沸后转小火浸煮"},
+    {"stage_order": 2, "tool_zh": "冰水", "tool_en": "ice water", "temperature_F": null, "heat_level_zh": null, "heat_level_en": null, "duration_minutes": 10, "notes_zh": "煮好立刻过冰水使皮质紧实"}
+  ],
+  "ingredients": [
+    {"name_zh": "整鸡", "name_en": "whole chicken", "amount": 1, "unit": "只"},
+    {"name_zh": "姜", "name_en": "ginger", "amount": 20, "unit": "g"},
+    {"name_zh": "葱", "name_en": "scallion", "amount": 20, "unit": "g"}
+  ],
+  "steps_description": "整鸡加姜葱冷水下锅，煮沸后转小火浸煮25分钟，捞出立刻过冰水，斩块装盘即可。",
+  "notes": "可搭配姜蓉蘸料一起食用"
+},
+{
+  "recipe_id": "C0012",
+  "source": "ai_generated",
+  "name_zh": "酸辣土豆丝",
+  "name_en": "Hot and Sour Shredded Potatoes",
+  "tags_zh": ["菜", "土豆", "热菜", "酸辣", "咸"],
+  "tags_en": ["main dish", "potato", "hot dish", "hot and sour", "salty"],
+  "difficulty": "easy",
+  "servings": 3,
+  "is_standalone_dish": true,
+  "components": [],
+  "cooking_stages": [
+    {"stage_order": 1, "tool_zh": "炒锅", "tool_en": "wok", "temperature_F": null, "heat_level_zh": "大火", "heat_level_en": "high heat", "duration_minutes": 5, "notes_zh": "土豆丝快速翻炒保持脆度"}
+  ],
+  "ingredients": [
+    {"name_zh": "土豆", "name_en": "potato", "amount": 2, "unit": "个"},
+    {"name_zh": "白醋", "name_en": "white vinegar", "amount": 20, "unit": "g"},
+    {"name_zh": "干辣椒", "name_en": "dried chili", "amount": 5, "unit": "g"}
+  ],
+  "steps_description": "土豆切丝浸水去淀粉，大火快炒干辣椒后加入土豆丝，加醋翻炒均匀即可。",
+  "notes": null
+},
+{
+  "recipe_id": "C0013",
+  "source": "ai_generated",
+  "name_zh": "紫薯馒头",
+  "name_en": "Purple Sweet Potato Steamed Bun",
+  "tags_zh": ["主食", "紫薯", "馒头", "碳水", "甜"],
+  "tags_en": ["staple", "purple sweet potato", "steamed bun", "carbohydrate", "sweet"],
+  "difficulty": "median",
+  "servings": 8,
+  "is_standalone_dish": true,
+  "components": [],
+  "cooking_stages": [
+    {"stage_order": 1, "tool_zh": "发面", "tool_en": "fermentation", "temperature_F": null, "heat_level_zh": null, "heat_level_en": null, "duration_minutes": 60, "notes_zh": "面团发酵至两倍大"},
+    {"stage_order": 2, "tool_zh": "蒸锅", "tool_en": "steamer", "temperature_F": 212, "heat_level_zh": null, "heat_level_en": null, "duration_minutes": 20, "notes_zh": "冷水上锅蒸20分钟"}
+  ],
+  "ingredients": [
+    {"name_zh": "紫薯", "name_en": "purple sweet potato", "amount": 200, "unit": "g"},
+    {"name_zh": "面粉", "name_en": "flour", "amount": 400, "unit": "g"},
+    {"name_zh": "酵母", "name_en": "yeast", "amount": 5, "unit": "g"},
+    {"name_zh": "糖", "name_en": "sugar", "amount": 30, "unit": "g"}
+  ],
+  "steps_description": "紫薯蒸熟压泥，与面粉、酵母、糖和水揉成面团，发酵后揉成馒头，蒸20分钟即可。",
+  "notes": null
+},
+{
+  "recipe_id": "C0014",
+  "source": "ai_generated",
+  "name_zh": "凉拌黄瓜",
+  "name_en": "Smashed Cucumber Salad",
+  "tags_zh": ["菜", "黄瓜", "冷菜", "清淡", "咸"],
+  "tags_en": ["main dish", "cucumber", "cold dish", "light", "salty"],
+  "difficulty": "easy",
+  "servings": 2,
+  "is_standalone_dish": true,
+  "components": [],
+  "cooking_stages": [
+    {"stage_order": 1, "tool_zh": "大碗", "tool_en": "big bowl", "temperature_F": null, "heat_level_zh": null, "heat_level_en": null, "duration_minutes": 10, "notes_zh": "腌制10分钟入味"}
+  ],
+  "ingredients": [
+    {"name_zh": "黄瓜", "name_en": "cucumber", "amount": 2, "unit": "个"},
+    {"name_zh": "蒜", "name_en": "garlic", "amount": 10, "unit": "g"},
+    {"name_zh": "生抽", "name_en": "light soy sauce", "amount": 15, "unit": "g"},
+    {"name_zh": "香醋", "name_en": "black vinegar", "amount": 10, "unit": "g"}
+  ],
+  "steps_description": "黄瓜拍碎切块，加蒜末和调料拌匀，腌制10分钟即可食用。",
+  "notes": null
+},
+{
+  "recipe_id": "C0015",
+  "source": "ai_generated",
+  "name_zh": "紫米露",
+  "name_en": "Purple Rice Sweet Soup",
+  "tags_zh": ["甜品", "糯米", "热饮类", "点心", "甜"],
+  "tags_en": ["dessert", "sticky rice", "hot drink", "snack", "sweet"],
+  "difficulty": "easy",
+  "servings": 4,
+  "is_standalone_dish": true,
+  "components": [],
+  "cooking_stages": [
+    {"stage_order": 1, "tool_zh": "锅", "tool_en": "pot", "temperature_F": null, "heat_level_zh": "小火", "heat_level_en": "low heat", "duration_minutes": 40, "notes_zh": "紫米小火慢煮至软糯"}
+  ],
+  "ingredients": [
+    {"name_zh": "紫米", "name_en": "purple sticky rice", "amount": 150, "unit": "g"},
+    {"name_zh": "椰浆", "name_en": "coconut milk", "amount": 200, "unit": "ml"},
+    {"name_zh": "冰糖", "name_en": "rock sugar", "amount": 30, "unit": "g"}
+  ],
+  "steps_description": "紫米浸泡后加水小火煮40分钟至软糯，加入椰浆和冰糖煮至溶化即可。",
+  "notes": null
 }
+]
 ]
