@@ -1,0 +1,393 @@
+[
+{
+  "recipe_id": "R0200",
+  "name_zh": "椰子冻",
+  "name_en": "Coconut Jelly",
+  "tags_zh": ["甜品", "椰子", "果冻", "冷饮类", "点心", "甜"],
+  "tags_en": ["dessert", "coconut", "jelly", "cold drink", "sweet"],
+  "difficulty": "easy",
+  "servings": 8,
+  "is_standalone_dish": true,
+  "components": [],
+  "cooking_stages": [
+    {"stage_order": 1, "tool_zh": "锅", "tool_en": "pot", "temperature_F": null, "heat_level_zh": null, "heat_level_en": null, "duration_minutes": null, "notes_zh": "隔水加热搅拌, 最后加入吉利丁水"},
+    {"stage_order": 2, "tool_zh": "冰箱", "tool_en": "refrigerator", "temperature_F": 40, "heat_level_zh": null, "heat_level_en": null, "duration_minutes": 180, "notes_zh": "冷藏3小时以上"}
+  ],
+  "ingredients": [
+    {"name_zh": "椰青水", "name_en": "coconut water", "amount": 330, "unit": "g"},
+    {"name_zh": "椰浆", "name_en": "coconut milk", "amount": 400, "unit": "ml"},
+    {"name_zh": "牛奶", "name_en": "milk", "amount": 260, "unit": "g"},
+    {"name_zh": "糖", "name_en": "sugar", "amount": 40, "unit": "g"},
+    {"name_zh": "吉利丁粉", "name_en": "gelatin powder", "amount": 8, "unit": "g"},
+    {"name_zh": "凉水", "name_en": "room temperature water", "amount": 50, "unit": "g"}
+  ],
+  "steps_description": "1. 将吉利丁粉加入凉水中，搅拌均匀，静置5分钟备用。\n2. 将椰青水、椰浆、牛奶和糖放入热水锅中，隔水加热, 小火加热并不断搅拌，直到糖完全溶解。\n3. 关火后，将吉利丁水倒入锅中，搅拌均匀。\n4. 将混合液倒入模具中，放入冰箱冷藏至少3小时，直到凝固。\n5. 取出后即可享用。",
+  "notes": null
+},
+{
+  "recipe_id": "R0700",
+  "name_zh": "卤鸭",
+  "name_en": "braised duck",
+  "tags_zh": ["菜", "鸭", "卤制", "红烧", "热菜", "咸"],
+  "tags_en": ["main dish", "duck", "braised", "stewed", "hot dish", "salty"],
+  "difficulty": "hard",
+  "servings": 8,
+  "is_standalone_dish": true,
+  "components": [],
+  "cooking_stages": [
+    {"stage_order": 1, "tool_zh": "锅", "tool_en": "pot", "temperature_F": null, "heat_level_zh": null, "heat_level_en": null, "duration_minutes": null, "notes_zh": "把卤鸭放入锅中，加入所有调料和水，煮沸后转小火炖煮, 等筷子能轻松插入, 中火收汁反复淋在鸭子上"}
+  ],
+  "ingredients": [
+    {"name_zh": "老鸭子", "name_en": "old duck", "amount": 1, "unit": "只"},
+    {"name_zh": "生抽", "name_en": "light soy sauce", "amount": 150, "unit": "g"},
+    {"name_zh": "老抽", "name_en": "dark soy sauce", "amount": 90, "unit": "g"},
+    {"name_zh": "料酒", "name_en": "rice wine", "amount": 270, "unit": "g"},
+    {"name_zh": "冰糖", "name_en": "rock sugar", "amount": 80, "unit": "g"}
+  ],
+  "steps_description": "把鸭子洗干净后放入锅中，加入所有调料和水，煮沸后转小火炖煮, 等筷子能轻松插入, 中火收汁反复淋在鸭子上",
+  "notes": null
+},
+{
+  "recipe_id": "R0800",
+  "name_zh": "芒果盒子",
+  "name_en": "mango box",
+  "tags_zh": ["甜品", "芒果", "可丽饼", "蛋糕", "点心", "奶油", "甜", "水果", "碳水"],
+  "tags_en": ["dessert", "mango", "crepe", "cake", "snack", "cream", "sweet", "fruit", "carbohydrate"],
+  "difficulty": "median",
+  "servings": 8,
+  "is_standalone_dish": true,
+  "components": ["R0801", "R0802"],
+  "cooking_stages": [
+    {"stage_order": 1, "tool_zh": "不粘平底锅", "tool_en": "non-stick pan", "temperature_F": null, "heat_level_zh": null, "heat_level_en": null, "duration_minutes": null, "notes_zh": "把卤鸭放入锅中，加入所有调料和水，煮沸后转小火炖煮, 等筷子能轻松插入, 中火收汁反复淋在鸭子上"},
+    {"stage_order": 2, "tool_zh": "盒子", "tool_en": "container", "temperature_F": null, "heat_level_zh": null, "heat_level_en": null, "duration_minutes": null, "notes_zh": "把原味千层蛋糕皮和奶油交替叠加，最后放上芒果块即可"}
+  ],
+  "ingredients": [
+    {"name_zh": "原味千层蛋糕皮", "name_en": "original crepe", "amount": 1, "unit": "serving"},
+    {"name_zh": "奶油", "name_en": "cream", "amount": 1, "unit": "serving"},
+    {"name_zh": "芒果", "name_en": "fresh mango", "amount": 300, "unit": "g"}
+  ],
+  "steps_description": "芒果切成块, 把原味千层蛋糕皮和奶油交替叠加，最后放上芒果块即可",
+  "notes": "盒子和千层蛋糕皮的大小不同, 份量也不同. 煎蛋平底锅, 每个盒子5层蛋糕皮吗可以做六个份左右"
+},
+{
+  "recipe_id": "R0801",
+  "name_zh": "原味千层蛋糕皮",
+  "name_en": "original crepe",
+  "tags_zh": ["甜品", "可丽饼", "蛋糕", "点心", "甜", "碳水"],
+  "tags_en": ["dessert", "crepe", "cake", "snack", "sweet"],
+  "difficulty": "easy",
+  "servings": 30,
+  "is_standalone_dish": false,
+  "components": [],
+  "cooking_stages": [
+    {"stage_order": 1, "tool_zh": "不粘平底锅", "tool_en": "non-stick pan", "temperature_F": null, "heat_level_zh": null, "heat_level_en": null, "duration_minutes": null, "notes_zh": "放入一勺或适量的面糊，摊成薄饼，煎至冒大泡, 松动边角, 反过来自动脱落即刻"}
+  ],
+  "ingredients": [
+    {"name_zh": "鸡蛋", "name_en": "egg", "amount": 2, "unit": "个"},
+    {"name_zh": "糖", "name_en": "sugar", "amount": 30, "unit": "g"},
+    {"name_zh": "盐", "name_en": "salt", "amount": 1, "unit": "ml"},
+    {"name_zh": "低筋面粉", "name_en": "cake flour", "amount": 100, "unit": "g"},
+    {"name_zh": "黄油", "name_en": "butter", "amount": 30, "unit": "g"},
+    {"name_zh": "牛奶", "name_en": "milk", "amount": 250, "unit": "g"}
+  ],
+  "steps_description": "把所有食材混合均匀，搅拌至无颗粒的面糊, 过筛。放入一勺或适量的面糊，摊成薄饼，煎至冒大泡, 松动边角, 反过来自动脱落即刻。重复此步骤，直到面糊用完。",
+  "notes": "serving size"
+},
+{
+  "recipe_id": "R0803",
+  "name_zh": "抹茶味千层蛋糕皮",
+  "name_en": "matcha flavored crepe",
+  "tags_zh": ["甜品", "可丽饼", "蛋糕", "点心", "抹茶", "甜", "碳水"],
+  "tags_en": ["dessert", "crepe", "cake", "snack", "matcha", "sweet", "carbohydrate"],
+  "difficulty": "easy",
+  "servings": 30,
+  "is_standalone_dish": false,
+  "components": ["R0801"],
+  "cooking_stages": [
+    {"stage_order": 1, "tool_zh": "不粘平底锅", "tool_en": "non-stick pan", "temperature_F": null, "heat_level_zh": null, "heat_level_en": null, "duration_minutes": null, "notes_zh": "放入一勺或适量的面糊，摊成薄饼，煎至冒大泡, 松动边角, 反过来自动脱落即刻"}
+  ],
+  "ingredients": [
+    {"name_zh": "抹茶粉", "name_en": "matcha powder", "amount": 7, "unit": "g"}
+  ],
+  "steps_description": "把所有食材, 包括抹茶粉, 混合均匀，搅拌至无颗粒的面糊, 过筛。放入一勺或适量的面糊，摊成薄饼，煎至冒大泡, 松动边角, 反过来自动脱落即刻。重复此步骤，直到面糊用完。",
+  "notes": "serving size"
+},
+{
+  "recipe_id": "R0804",
+  "name_zh": "巧克力味千层蛋糕皮",
+  "name_en": "chocolate flavored crepe",
+  "tags_zh": ["甜品", "可丽饼", "蛋糕", "点心", "巧克力", "甜", "碳水"],
+  "tags_en": ["dessert", "crepe", "cake", "snack", "chocolate", "sweet", "carbohydrate"],
+  "difficulty": "easy",
+  "servings": 30,
+  "is_standalone_dish": false,
+  "components": ["R0801"],
+  "cooking_stages": [
+    {"stage_order": 1, "tool_zh": "不粘平底锅", "tool_en": "non-stick pan", "temperature_F": null, "heat_level_zh": null, "heat_level_en": null, "duration_minutes": null, "notes_zh": "放入一勺或适量的面糊，摊成薄饼，煎至冒大泡, 松动边角, 反过来自动脱落即刻"}
+  ],
+  "ingredients": [
+    {"name_zh": "可可粉", "name_en": "cocoa powder", "amount": 35, "unit": "g"}
+  ],
+  "steps_description": "把所有食材, 包括可可粉, 混合均匀，搅拌至无颗粒的面糊, 过筛。放入一勺或适量的面糊，摊成薄饼，煎至冒大泡, 松动边角, 反过来自动脱落即刻。重复此步骤，直到面糊用完。",
+  "notes": "serving size"
+},
+{
+  "recipe_id": "R0802",
+  "name_zh": "奶油",
+  "name_en": "cream",
+  "tags_zh": ["甜品", "蛋糕", "奶油", "点心", "甜"],
+  "tags_en": ["dessert", "cake", "cream", "snack", "sweet"],
+  "difficulty": "easy",
+  "servings": 6,
+  "is_standalone_dish": true,
+  "components": [],
+  "cooking_stages": [
+    {"stage_order": 1, "tool_zh": "大碗", "tool_en": "big bowl", "temperature_F": null, "heat_level_zh": null, "heat_level_en": null, "duration_minutes": null, "notes_zh": "分三次在淡奶油中加入糖粉，搅拌均匀，打发至硬性发泡"}
+  ],
+  "ingredients": [
+    {"name_zh": "淡奶油", "name_en": "whipping cream", "amount": 150, "unit": "g"},
+    {"name_zh": "糖", "name_en": "sugar", "amount": 10, "unit": "g"}
+  ],
+  "steps_description": "分三次在淡奶油中加入糖粉，搅拌均匀，打发至硬性发泡",
+  "notes": null
+},
+{
+  "recipe_id": "R0900",
+  "name_zh": "肉松小贝",
+  "name_en": "pork song cake",
+  "tags_zh": ["甜品", "咸甜", "肉松", "蛋糕", "点心", "咸", "甜", "碳水"],
+  "tags_en": ["dessert", "salty and sweet", "pork song", "cake", "snack", "sweet", "salty", "carbohydrate"],
+  "difficulty": "median",
+  "servings": 8,
+  "is_standalone_dish": true,
+  "components": ["R1000"],
+  "cooking_stages": [
+    {"stage_order": 1, "tool_zh": "刮刀", "tool_en": "spatula", "temperature_F": null, "heat_level_zh": null, "heat_level_en": null, "duration_minutes": null, "notes_zh": "取两片纸杯蛋糕, 中间用蛋黄酱粘合, 再在表面均匀涂抹蛋黄酱沾满肉松即可"}
+    ],
+  "ingredients": [
+    {"name_zh": "四寸戚风蛋糕(纸杯蛋糕模具)", "name_en": "4-inch chiffon cake(cupcake mold)", "amount": 1, "unit": "serving"},
+    {"name_zh": "蛋黄酱", "name_en": "mayonnaise", "amount": 80, "unit": "g"},
+    {"name_zh": "肉松", "name_en": "pork song", "amount": 180, "unit": "g"}
+  ],
+  "steps_description": "将烤好的戚风纸杯蛋糕冷却后取出. 取两片纸杯蛋糕, 中间用蛋黄酱粘合, 再在表面均匀涂抹蛋黄酱沾满肉松即可",
+  "notes": "四寸戚风蛋糕配方放在cupcake大小的模具里, 烤制步骤和时间不变"
+},
+{
+  "recipe_id": "R1000",
+  "name_zh": "四寸戚风蛋糕",
+  "name_en": "4-inch chiffon cake",
+  "tags_zh": ["甜品", "蛋糕", "点心", "甜", "碳水"],
+  "tags_en": ["dessert", "cake", "snack", "sweet", "carbohydrate"],
+  "difficulty": "median",
+  "servings": 1,
+  "is_standalone_dish": true,
+  "components": [],
+  "cooking_stages": [
+    {"stage_order": 1, "tool_zh": "烤箱", "tool_en": "ove", "temperature_F": 310, "heat_level_zh": "预热", "heat_level_en": "pre heat", "duration_minutes": null, "notes_zh": "把烤箱预热至310华氏度"},
+    {"stage_order": 2, "tool_zh": "烤箱", "tool_en": "oven", "temperature_F": 310, "heat_level_zh": "烘烤", "heat_level_en": "bake", "duration_minutes": 45, "notes_zh": "面糊放入烤箱310华氏度45分钟"}
+  ],
+  "ingredients": [
+    {"name_zh": "蛋白", "name_en": "egg white", "amount": 4, "unit": "个"},
+    {"name_zh": "蛋黄", "name_en": "egg yolk", "amount": 4, "unit": "个"},
+    {"name_zh": "低筋面粉", "name_en": "cake flour", "amount": 40, "unit": "g"},
+    {"name_zh": "糖", "name_en": "sugar", "amount": 40, "unit": "g"},
+    {"name_zh": "油", "name_en": "oil", "amount": 40, "unit": "g"},
+    {"name_zh": "牛奶", "name_en": "milk", "amount": 40, "unit": "g"},
+    {"name_zh": "柠檬汁", "name_en": "lemon juice", "amount": 4, "unit": "g"}
+  ],
+  "steps_description": "准备两个干净无油无水的碗分别用来打蛋黄和蛋清. 1.先将油, 牛奶搅打至融合乳化在空盆中 \n2.加入低筋面粉混合均匀 \n3.加入蛋黄搅拌均匀, 用干净打蛋器打发 \n4.从冷藏拿出蛋清加入柠檬汁打发至粗泡, 分三次加入糖打发至硬性发泡 \n5.将蛋白分三次加入蛋黄糊中, 用刮刀翻拌均匀 \n6.倒入戚风模具中, 放入预热好的烤箱中烘烤45分钟 \n7.出炉后倒扣放凉, 脱模即可",
+  "notes": "1. 提前将分离好的蛋清放在容器里放到冰箱保持低温, 更好打发. 2. 80g蔓越莓干, 糖量减半, 就是蔓越莓蛋糕啦"
+}, 
+{
+  "recipe_id": "R1500",
+  "name_zh": "雪花酥",
+  "name_en": "Snowflake Crisp",
+  "tags_zh": ["甜品", "咸甜", "糖果", "点心", "咸", "甜", "碳水"],
+  "tags_en": ["dessert", "salty and sweet", "candy", "snack", "sweet", "salty", "carbohydrate"],
+  "difficulty": "hard",
+  "servings": 100,
+  "is_standalone_dish": true,
+  "components": [],
+  "cooking_stages": [
+    {"stage_order": 1, "tool_zh": "不粘锅", "tool_en": "non-stick pan", "temperature_F": null, "heat_level_zh": null, "heat_level_en": null, "duration_minutes": null, "notes_zh": ""}
+    ],
+  "ingredients": [
+    {"name_zh": "棉花糖", "name_en": "marshmallows", "amount": 453, "unit": "g"},
+    {"name_zh": "黄油", "name_en": "butter", "amount": 80, "unit": "g"},
+    {"name_zh": "奶粉", "name_en": "milk powder", "amount": 180, "unit": "g"},
+    {"name_zh": "蔓越莓", "name_en": "cranberries", "amount": 120, "unit": "g"},
+    {"name_zh": "坚果", "name_en": "nuts", "amount": 180, "unit": "g"},
+    {"name_zh": "饼干", "name_en": "crackers", "amount": 200, "unit": "g"}
+  ],
+  "steps_description": "1.在炒锅内放入黄油, 中小火融化后加入棉花糖, 用刮刀翻炒至完全融化. \n2.关火后加入一半奶粉(90g), 均匀搅拌加入蔓越莓, 坚果, 饼干碎, 继续翻炒均匀. \n3.在铺好油纸的模具/烤盘中均匀撒上适量奶粉, 然后倒入雪花酥用刮刀压平整, 再平整面上均匀撒上剩余奶粉. \n4.放置温热就可切块了",
+  "notes": "180g奶粉, 分成两份, 90g每份, 一份在炒制过程中放, 还有90g均匀撒在模具和制作好的雪花酥上面里防粘. 放置温热就可切块了"
+},
+{
+  "recipe_id": "R1900",
+  "name_zh": "四寸巴斯克蛋糕",
+  "name_en": "4-inch Basque cake",
+  "tags_zh": ["甜品", "蛋糕", "奶油", "奶酪", "点心", "甜"],
+  "tags_en": ["dessert", "cake", "cream", "cheese", "snack", "sweet"],
+  "difficulty": "easy",
+  "servings": 1,
+  "is_standalone_dish": true,
+  "components": [],
+  "cooking_stages": [
+    {"stage_order": 1, "tool_zh": "烤箱", "tool_en": "oven", "temperature_F": 430, "heat_level_zh": null, "heat_level_en": null, "duration_minutes": 10, "notes_zh": "烤箱预热至430华氏度，烘烤10分钟"},
+    {"stage_order": 2, "tool_zh": "烤箱", "tool_en": "oven", "temperature_F": 395, "heat_level_zh": null, "heat_level_en": null, "duration_minutes": 15, "notes_zh": "烤箱调至395华氏度，继续烘烤15分钟"}
+    ],
+  "ingredients": [
+    {"name_zh": "奶油奶酪", "name_en": "cream cheese", "amount": 220, "unit": "g"},
+    {"name_zh": "糖", "name_en": "sugar", "amount": 65, "unit": "g"},
+    {"name_zh": "鸡蛋", "name_en": "egg", "amount": 2, "unit": "个"},
+    {"name_zh": "淡奶油", "name_en": "whipping cream", "amount": 120, "unit": "g"},
+    {"name_zh": "玉米淀粉", "name_en": "corn starch", "amount": 10, "unit": "g"},
+    {"name_zh": "柠檬汁", "name_en": "fresh lemon juice", "amount": 12, "unit": "g"},
+    {"name_zh": "柠檬皮碎", "name_en": "fresh lemon peel", "amount": 5, "unit": "g"}
+  ],
+  "steps_description": "1.将奶油奶酪加入柠檬汁和糖打软. \n2.分三次加入打好的蛋液, 搅拌均匀. \n3.分三次加入淡奶油, 搅拌均匀. \n4. 加入过筛后的玉米淀粉, 搅拌均匀. \n5.在4寸的蛋糕模具中垫好油纸 \n5.将混合好的蛋糕糊过筛倒入蛋糕模具中, 震出气泡, 加入柠檬皮碎搅拌均匀 \n5.放入预热好的烤箱中, 先以430华氏度烘烤10分钟, 再调至395华氏度继续烘烤15分钟",
+  "notes": "柠檬汁可以适量喜欢酸的可以放半个柠檬"
+},
+{
+  "recipe_id": "R2200",
+  "name_zh": "雪梅娘",
+  "name_en": "cream mochi",
+  "tags_zh": ["甜品", "糯米", "奶油", "点心", "甜", "水果", "碳水"],
+  "tags_en": ["dessert", "sticky rice", "cream",  "snack", "sweet", "fruit", "carbohydrate"],
+  "difficulty": "hard",
+  "servings": 25,
+  "is_standalone_dish": true,
+  "components": ["R2201", "R0802"],
+  "cooking_stages": [
+    {"stage_order": 1, "tool_zh": "小碗", "tool_en": "little bowl", "temperature_F": 212, "heat_level_zh": null, "heat_level_en": null, "duration_minutes": 40, "notes_zh": "冷水上锅, 水开后蒸40分钟"}
+    ],
+  "ingredients": [
+    {"name_zh": "麻薯", "name_en": "mochi", "amount": 1, "unit": "serving"},
+    {"name_zh": "奶油", "name_en": "cream", "amount": 2.5, "unit": "serving"},
+    {"name_zh": "炒熟玉米淀粉", "name_en": "sugar", "amount": 50, "unit": "g"},
+    {"name_zh": "水果", "name_en": "fruit", "amount": 375, "unit": "g"}
+  ],
+  "steps_description": "1. 将麻薯分成小团, 沾满炒熟的糯米粉防粘, 用擀面杖擀成饺子皮一般的厚度 \n2. 在平铺的, 或者放在小碗里的麻薯皮上挤入适量奶油, 放上适量水果, 再挤上适量奶油 \n3. 将麻薯皮包好, 收口捏紧, 再加一些熟糯米粉防粘, 放入冰箱冷藏30分钟以上即可",
+  "notes": "可以选择任何你喜欢的水果, 芒果, 草莓等等"
+},
+{
+  "recipe_id": "R2201",
+  "name_zh": "麻薯",
+  "name_en": "mochi",
+  "tags_zh": ["甜品", "糯米", "奶油", "点心", "甜", "碳水"],
+  "tags_en": ["dessert", "sticky rice", "cream",  "snack", "sweet", "carbohydrate"],
+  "difficulty": "median",
+  "servings": 1,
+  "is_standalone_dish": true,
+  "components": [],
+  "cooking_stages": [
+    {"stage_order": 1, "tool_zh": "蒸锅", "tool_en": "steamer", "temperature_F": 212, "heat_level_zh": null, "heat_level_en": null, "duration_minutes": 40, "notes_zh": "冷水上锅, 水开后蒸40分钟"}
+    ],
+  "ingredients": [
+    {"name_zh": "糯米粉", "name_en": "sticky rice flour", "amount": 150, "unit": "g"},
+    {"name_zh": "玉米淀粉", "name_en": "corn starch", "amount": 45, "unit": "g"},
+    {"name_zh": "糖", "name_en": "sugar", "amount": 70, "unit": "g"},
+    {"name_zh": "牛奶", "name_en": "milk", "amount": 255, "unit": "g"},
+    {"name_zh": "黄油", "name_en": "butter", "amount": 50, "unit": "g"}
+  ],
+  "steps_description": "1.将糯米粉和玉米淀粉混合均匀. \n2.加入糖和牛奶, 搅拌均匀. \n3.将混合好的面糊过筛倒入耐高温的玻璃或者陶瓷中, 盖上保鲜膜, 用牙签扎几个洞. \n4.冷水上锅, 水开后蒸40min. \n5.蒸好后立刻加入黄油揉至均匀, 黄油全部吸收后, 分成适量的小块.",
+  "notes": "蒸好后立刻拌黄油, 小心烫, 凉了黄油就不容易吸收了"
+},
+{
+  "recipe_id": "R2300",
+  "name_zh": "黄油曲奇",
+  "name_en": "butter cookie",
+  "tags_zh": ["甜品", "黄油", "点心", "甜", "碳水"],
+  "tags_en": ["dessert", "butter", "snack", "sweet", "carbohydrate"],
+  "difficulty": "median",
+  "servings": 1,
+  "is_standalone_dish": true,
+  "components": [],
+  "cooking_stages": [
+    {"stage_order": 1, "tool_zh": "烤箱", "tool_en": "oven", "temperature_F": 280, "heat_level_zh": null, "heat_level_en": null, "duration_minutes": 10, "notes_zh": "预热烤箱至175°C，烘烤20分钟"}
+    ],
+  "ingredients": [
+    {"name_zh": "黄油", "name_en": "butter", "amount": 120, "unit": "g"},
+    {"name_zh": "糖", "name_en": "sugar", "amount": 30, "unit": "g"},
+    {"name_zh": "盐", "name_en": "salt", "amount": 70, "unit": "g"},
+    {"name_zh": "牛奶", "name_en": "milk", "amount": 10, "unit": "g"},
+    {"name_zh": "奶油", "name_en": "whipping cream", "amount": 10, "unit": "g"},
+    {"name_zh": "低筋面粉", "name_en": "all-purpose flour", "amount": 120, "unit": "g"},
+    {"name_zh": "玉米淀粉", "name_en": "corn starch", "amount": 20, "unit": "g"},
+    {"name_zh": "奶粉", "name_en": "milk powder", "amount": 15, "unit": "g"}
+  ],
+  "steps_description": "1.将室温软化好的黄油打发至发白. \n2.加入糖搅打均匀. \n3.加入牛奶搅打均匀. \n4.最后加入所有分类搅打均匀. \n5. 在铺好烘焙纸的烤盘上用磨具, 或者分成小球用手指按扁 \n6.预热烤箱至175°C，烘烤20分钟.",
+  "notes": "1. 没有奶油的话, 可以用牛奶代替, \n2.黄油一定要室温软化, 不能用微波炉加热成液态"
+},
+{
+  "recipe_id": "R2400",
+  "name_zh": "小酥肉",
+  "name_en": "crispy pork strips",
+  "tags_zh": ["热菜", "猪肉", "油炸", "咸", "酥脆","碳水", "蛋白质"],
+  "tags_en": ["main course", "pork", "fried", "salty", "crispy", "carbohydrate", "protein"],
+  "difficulty": "hard",
+  "servings": 1,
+  "is_standalone_dish": true,
+  "components": [],
+  "cooking_stages": [
+    {"stage_order": 1, "tool_zh": "腌制", "tool_en": "marinade", "temperature_F": null, "heat_level_zh": null, "heat_level_en": null, "duration_minutes": 3, "notes_zh": "猪肉洗干净切条, 加入适量蚝油, 五香粉, 盐, 腌制20分钟"},
+    {"stage_order": 1, "tool_zh": "锅", "tool_en": "fried pot", "temperature_F": 280, "heat_level_zh": null, "heat_level_en": null, "duration_minutes": 3, "notes_zh": "油温七成热, 一根一根下锅炸, 定型后捞出, 再炸一次, 炸至金黄酥脆即可"}
+    ],
+  "ingredients": [
+    {"name_zh": "猪肉", "name_en": "pork", "amount": 300, "unit": "g"},
+    {"name_zh": "鸡蛋", "name_en": "egg", "amount": 2, "unit": "个"},
+    {"name_zh": "面粉", "name_en": "flour", "amount": 20, "unit": "g"},
+    {"name_zh": "玉米淀粉", "name_en": "corn starch", "amount": 50, "unit": "g"},
+    {"name_zh": "花椒", "name_en": "fennel seeds", "amount": 6, "unit": "g"},
+    {"name_zh": "白芝麻", "name_en": "white sesame seeds", "amount": 15, "unit": "g"}
+  ],
+  "steps_description": "1.猪肉洗干净切条, 加入适量蚝油, 五香粉, 盐, 腌制20分钟. \n2.混合面粉和玉米淀粉加入鸡蛋搅拌至无颗粒面糊. \n3.面糊中加入微微碾碎的花椒粒和白芝麻,搅拌均匀. \n4.把腌制好的猪肉条裹上面糊. \n5.分批次放入七成热的油锅中, 防止粘连 \n6.炸制表面微微金黄, 捞出控油, 再次放入油锅中炸至金黄酥脆即可",
+  "notes": "1. 油温可以插入木筷子, 筷子上冒泡, 就可以下锅啦"
+},
+{
+  "recipe_id": "R2400",
+  "name_zh": "油条",
+  "name_en": "chinese churros",
+  "tags_zh": ["热菜", "油炸", "咸", "酥脆", "碳水"],
+  "tags_en": ["main course", "fried", "salty", "crispy", "carbohydrate"],
+  "difficulty": "hard",
+  "servings": 1,
+  "is_standalone_dish": true,
+  "components": [],
+  "cooking_stages": [
+    {"stage_order": 1, "tool_zh": "发面", "tool_en": "fermentation", "temperature_F": null, "heat_level_zh": null, "heat_level_en": null, "duration_minutes": 3, "notes_zh": "提前一晚把混合好的面糊盖上保鲜膜, 放冰箱发酵, 时常不少于8小时"}
+    ],
+  "ingredients": [
+    {"name_zh": "低筋面粉", "name_en": "all-purpose flour", "amount": 500, "unit": "g"},
+    {"name_zh": "油条粉", "name_en": "chinese churros powder", "amount": 20, "unit": "g"},
+    {"name_zh": "鸡蛋", "name_en": "egg", "amount": 1, "unit": "g"},
+    {"name_zh": "盐", "name_en": "salt", "amount": 5, "unit": "g"},
+    {"name_zh": "水", "name_en": "water", "amount": 260, "unit": "g"},
+    {"name_zh": "油", "name_en": "oil", "amount": 20, "unit": "g"}
+  ],
+  "steps_description": "1.提前一晚把混合好的面糊盖上保鲜膜, 放冰箱发酵, 时常不少于8小时. \n2.发酵后, 拉成长方形, 切成长条. \n3.将两个长条上下叠放, 用沾水的筷子在中间压一下. \n4.拉长, 放入热的宽油锅里, 炸制金黄, 捞出.",
+  "notes": "1. 油温可以插入木筷子, 筷子上冒泡, 就可以下锅啦"
+},
+{
+  "recipe_id": "R3300",
+  "name_zh": "水蒸蛋",
+  "name_en": "Steamed Egg",
+  "tags_zh": ["热菜", "鸡蛋", "酱油", "咸", "蛋白质"],
+  "tags_en": ["main course", "egg", "soy sauce", "salty", "protein"],
+  "difficulty": "easy",
+  "servings": 1,
+  "is_standalone_dish": true,
+  "components": [],
+  "cooking_stages": [
+    {"stage_order": 1, "tool_zh": "蒸锅", "tool_en": "steamer", "temperature_F": 212, "heat_level_zh": null, "heat_level_en": null, "duration_minutes": 10, "notes_zh": "蒸锅水开后, 中火蒸10分钟, 关火后焖5分钟再开盖"}
+    ],
+  "ingredients": [
+    {"name_zh": "鸡蛋", "name_en": "egg", "amount": 1, "unit": "个"},
+    {"name_zh": "温水", "name_en": "warm water", "amount": 300, "unit": "g"},
+    {"name_zh": "酱油", "name_en": "soy sauce", "amount": 5, "unit": "ml"},
+    {"name_zh": "盐", "name_en": "salt", "amount": 2, "unit": "g"}
+  ],
+  "steps_description": "1.将鸡蛋打散，加入盐，加入温水, 搅拌均匀. \n2.将混合好的蛋液倒入蒸锅中，用中火蒸10分钟，关火后焖5分钟再开盖",
+  "notes": "鸡蛋大小有差别, 但是记住水和鸡蛋的比例是2:1, 也就是鸡蛋液的两倍温水"
+}
+]
