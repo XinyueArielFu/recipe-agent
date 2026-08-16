@@ -192,7 +192,7 @@
   "is_standalone_dish": true,
   "components": [],
   "cooking_stages": [
-    {"stage_order": 1, "tool_zh": "烤箱", "tool_en": "ove", "temperature_F": 310, "heat_level_zh": "预热", "heat_level_en": "pre heat", "duration_minutes": null, "notes_zh": "把烤箱预热至310华氏度"},
+    {"stage_order": 1, "tool_zh": "烤箱", "tool_en": "oven", "temperature_F": 310, "heat_level_zh": "预热", "heat_level_en": "pre heat", "duration_minutes": null, "notes_zh": "把烤箱预热至310华氏度"},
     {"stage_order": 2, "tool_zh": "烤箱", "tool_en": "oven", "temperature_F": 310, "heat_level_zh": "烘烤", "heat_level_en": "bake", "duration_minutes": 45, "notes_zh": "面糊放入烤箱310华氏度45分钟"}
   ],
   "ingredients": [
