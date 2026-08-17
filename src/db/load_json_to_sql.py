@@ -158,7 +158,3 @@ print(f"Inserted cooking_stages: total {count} rows")
 
 # cur.execute("SELECT stage_order, tool_zh, notes_zh FROM cooking_stages WHERE recipe_id = 'R0800' ORDER BY stage_order")
 # print("Cooking stages:", cur.fetchall())
-
-######  ######
-######  ######
-######  ######
