@@ -53,17 +53,20 @@ labels = kmeans.fit_predict(X)
 
 # print("Cluster labels:", labels)
 
+### helper: print_clusters
+def print_clusters(recipe_names, labels):
+    clusters = {}
+    for name, label in zip(recipe_names, labels):
+        clusters.setdefault(label, []).append(name)
+
+    for cluster_id in sorted(clusters.keys()):
+        print(f"\nCluster {cluster_id}")
+        for name in clusters[cluster_id]:
+            print(f" - {name}")
+
 ###### 5. recipe <--> KNN label ######
 recipe_names = [recipe["name_zh"] for recipe in recipes_data]
-
-clusters = {}
-for name, label in zip(recipe_names, labels):
-    clusters.setdefault(label, []).append(name)
-
-for cluster_id in sorted(clusters.keys()):
-    print(f"\nCluster {cluster_id}")
-    for name in clusters[cluster_id]:
-        print(f" - {name}")
+print_clusters(recipe_names, labels)
 
 ###### 6. silhouette score ######
 score = silhouette_score(X, labels=labels)
@@ -82,14 +85,6 @@ print("PCA — silhouette:", silhouette_score(X_reduced, labels_pca))
 print("PCA — Davies-Bouldin:", davies_bouldin_score(X_reduced, labels_pca))
 
 recipe_names = [recipe["name_zh"] for recipe in recipes_data]
-
-clusters = {}
-for name, label in zip(recipe_names, labels_pca):
-    clusters.setdefault(label, []).append(name)
-
-for cluster_id in sorted(clusters.keys()):
-    print(f"\nCluster {cluster_id}")
-    for name in clusters[cluster_id]:
-        print(f" - {name}")
+print_clusters(recipe_names, labels)
         
 ######  ######
