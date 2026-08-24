@@ -1,3 +1,4 @@
+##################### LLMBackend abstract class ################
 from abc import ABC, abstractmethod
 
 class LLMBackend(ABC):
@@ -5,7 +6,7 @@ class LLMBackend(ABC):
     def generate(self, prompt: str) -> str:
         pass
 
-################################################
+######################## OllamaBackend ########################
 import requests
 
 class OllamaBackend(LLMBackend):
@@ -24,10 +25,54 @@ class OllamaBackend(LLMBackend):
         result = response.json() # ollama returns in json, response help convert to dict
         return result["response"] # response stored in "response" attribute
 
+######################## AnthropicBackend ###################
+import os
+from dotenv import load_dotenv
+from anthropic import Anthropic
+
+load_dotenv()
+
+class AnthropicBackend(LLMBackend):
+    def __init__(self, model_name: str = "claude-sonnet-5"):
+        self.model_name = model_name
+        self.client = Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
+
+    def generate(self, prompt: str) -> str:
+        response = self.client.messages.create(
+            model=self.model_name,
+            max_tokens=200,
+            messages=[
+                {"role": "user", "content": prompt}
+            ]
+        )
+        return response.content[0].text
+
+def get_backend(name: str) -> LLMBackend:
+    backends = {
+        "llama": OllamaBackend("llama3.2:3b"),
+        "llama-large": OllamaBackend("llama3:latest"),
+        "deepseek": OllamaBackend("deepseek-r1:8b"),
+        "claude": AnthropicBackend(),
+    }
+
+    if name not in backends:
+        raise ValueError(f"Unknown backend: {name}. Available: {list(backends.keys())}")
+    return backends[name]
+                         
+
+
 if __name__ == "__main__":
     # backend = OllamaBackend("llama3.2:3b")
-    backend = OllamaBackend("llama3:latest")
-
+    # backend = OllamaBackend("llama3:latest")
     # answer = backend.generate("Can you teach me how to make chiffon cake")
+    # answer = backend.generate("用一句话介绍一下你自己")
+    # print(answer)
+
+    # backend = AnthropicBackend()
+    # answer = backend.generate("用一句话介绍一下你自己")
+    # print(answer)
+
+    backend = get_backend("deepseek")
     answer = backend.generate("用一句话介绍一下你自己")
     print(answer)
+    
