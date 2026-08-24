@@ -54,7 +54,7 @@ def search_recipe_notes(query: str, n_results: int = 3) -> str:
     output = []
     for r in results:
         output.append(f"{r['name_zh']} ({r['name_en']}): {r['document']}")
-        return "\n".join(output)
+    return "\n".join(output)
 
 
 ####### 4. tool schemas (manual for LLM) ############
