@@ -30,28 +30,7 @@ class OllamaBackend(LLMBackend):
         return result["response"] # response stored in "response" attribute
 
     def generate_with_tools(self, messages: list, tools: list) -> dict:
-        response = self.client.messages.create(
-            model=self.model_name,
-            max_tokens=1000,
-            tools=tools,
-            messages=messages
-        )
-
-        if response.stop_reason == "tool_use":
-            tool_block = next(block for block in response.content if block.type == "tool_use")
-            return {
-                "stop_reason": "tool_use",
-                "tool_name": tool_block.name,
-                "tool_input": tool_block.input,
-                "tool_use_id": tool_block.id,
-                "raw_content": response.content,
-            }
-
-        text_block = next(b for b in response.content if b.type == "text")
-        return {
-            "stop_reason": "end_turn",
-            "text": text_block.text,
-        }
+        pass 
 
 ######################## AnthropicBackend ###################
 import os
@@ -74,6 +53,30 @@ class AnthropicBackend(LLMBackend):
             ]
         )
         return response.content[0].text
+
+    def generate_with_tools(self, messages: list, tools: list) -> dict:
+        response = self.client.messages.create(
+            model=self.model_name,
+            max_tokens=1000,
+            tools=tools,
+            messages=messages
+        )
+
+        if response.stop_reason == "tool_use":
+            tool_block = next(block for block in response.content if block.type == "tool_use")
+            return {
+                "stop_reason": "tool_use",
+                "tool_name": tool_block.name,
+                "tool_input": tool_block.input,
+                "tool_use_id": tool_block.id,
+                "raw_content": response.content,
+            }
+
+        text_block = next(b for b in response.content if b.type == "text")
+        return {
+            "stop_reason": "end_turn",
+            "text": text_block.text,
+        }
 
 def get_backend(name: str) -> LLMBackend:
     backends = {
