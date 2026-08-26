@@ -13,6 +13,11 @@ TOOL_FUNCTIONS = {
     "search_recipe_notes": search_recipe_notes
 }
 
+## helper method
+def extract_text(response):
+    text_block = next(block for block in response.content if block.type == "text")
+    return text_block.text
+
 def handle_query(user_query: str, backend_name: str = "claude") -> str:
     backend = get_backend(backend_name)
 
@@ -56,10 +61,18 @@ def handle_query(user_query: str, backend_name: str = "claude") -> str:
             tools=tools,
             messages=messages
         )
-        return final_response.content[0].text
-    return response.content[0].text
+        return extract_text(final_response)
+    return extract_text(response)
 
 if __name__ == "__main__":
-    answer = handle_query("椰子冻需要哪些食材？")
-    print("\n--- Final Answer ---")
-    print(answer)
+    # print("=== Test 1: SQL query ===")
+    # answer1 = handle_query("椰子冻需要哪些食材？")
+    # print(answer1)
+
+    print("\n=== Test 2: RAG search ===")
+    answer2 = handle_query("椰子冻要怎么做？")
+    print(answer2)
+
+    print("\n=== Test 3: temperature conversion ===")
+    answer3 = handle_query("350华氏度是多少摄氏度？")
+    print(answer3)
