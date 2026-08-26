@@ -30,7 +30,43 @@ class OllamaBackend(LLMBackend):
         return result["response"] # response stored in "response" attribute
 
     def generate_with_tools(self, messages: list, tools: list) -> dict:
-        pass 
+        ollama_tools = [
+            {
+                "type": "function",
+                "function": {
+                    "name": tool["name"],
+                    "description": tool["description"],
+                    "parameters": tool["input_schema"],
+                }
+            }
+            for tool in tools
+        ]
+
+        response = requests.post(
+            "http://localhost:11434/api/generate",
+            json={
+                "model": self.model_name,
+                "messages": messages,
+                "tools": ollama_tools,
+                "stream": False,
+            }
+        )
+        result = response.json()
+        message = result["message"]
+
+        if message.get("tool_calls"):
+            call = message["tool_calls"][0]
+            return {
+                        "stop_reason": "tool_use",
+                        "tool_name": call["function"]["name"],
+                        "tool_input": call["fucntion"]["arguments"],
+                        "raw_content": message,
+                    }
+
+        return {
+            "stop_reason": "end_turn",
+            "text": message["content"],
+        }
 
 ######################## AnthropicBackend ###################
 import os
