@@ -43,7 +43,7 @@ class OllamaBackend(LLMBackend):
         ]
 
         response = requests.post(
-            "http://localhost:11434/api/generate",
+            "http://localhost:11434/api/chat",
             json={
                 "model": self.model_name,
                 "messages": messages,
@@ -52,6 +52,7 @@ class OllamaBackend(LLMBackend):
             }
         )
         result = response.json()
+        print("DEBUG - Ollama raw response:", result) 
         message = result["message"]
 
         if message.get("tool_calls"):
@@ -59,7 +60,7 @@ class OllamaBackend(LLMBackend):
             return {
                         "stop_reason": "tool_use",
                         "tool_name": call["function"]["name"],
-                        "tool_input": call["fucntion"]["arguments"],
+                        "tool_input": call["function"]["arguments"],
                         "raw_content": message,
                     }
 
