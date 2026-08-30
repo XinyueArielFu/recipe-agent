@@ -13,66 +13,65 @@ TOOL_FUNCTIONS = {
     "search_recipe_notes": search_recipe_notes
 }
 
-## helper method
-def extract_text(response):
-    text_block = next(block for block in response.content if block.type == "text")
-    return text_block.text
-
-def handle_query(user_query: str, backend_name: str = "claude") -> str:
+def handle_query(user_query: str, backend_name: str = "claude", max_turns=5) -> str:
     backend = get_backend(backend_name)
 
     messages = [
         {"role": "user", "content": user_query}
     ]
 
-    response = backend.client.messages.create(
-        model=backend.model_name,
-        max_tokens = 1000,
-        tools=tools,
-        messages=messages
-    )
+    for turn in range(max_turns):
+        result = backend.generate_with_tools(messages, tools)
 
-    if response.stop_reason == "tool_use":
+        if result["stop_reason"] != "tool_use":
+            return result["text"]
+        
         # FOR NOW: only take the first tool request
-        tool_use_block = next(block for block in response.content if block.type == "tool_use") 
-        tool_name = tool_use_block.name
-        tool_input = tool_use_block.input
+        tool_name = result["tool_name"]
+        tool_input = result["tool_input"]
 
-        print(f"[Agent decided to call: {tool_name}({tool_input})]")
+        print(f"[Turn {turn + 1}] Agent decided to call: {tool_name}({tool_input})")
 
         tool_function = TOOL_FUNCTIONS[tool_name]
         tool_result = tool_function(**tool_input)
 
-        messages.append({"role": "assistant", "content": response.content})
-        messages.append({
-            "role": "user", 
-            "content": [
-                {
-                    "type": "tool_result",
-                    "tool_use_id": tool_use_block.id,
-                    "content": str(tool_result)
-                }
-            ]
-        })
+        if "tool_use_id" in result:
+            messages.append({"role": "assistant", "content": result["raw_content"]})
+            messages.append({
+                "role": "user", 
+                "content": [
+                    {
+                        "type": "tool_result",
+                        "tool_use_id": result["tool_use_id"],
+                        "content": str(tool_result)
+                    }
+                ]
+            })
+        else:
+            # because Ollam demand "content" has to be string instead of a dictionary object which Antheropic accepts
+            messages.append({"role": "assistant", "content": "", "tool_calls": result["raw_content"].get("tool_call", [])})
+            messages.append({
+                "role": "tool",
+                "content": str(tool_result)
+            })
 
-        final_response = backend.client.messages.create(
-            model=backend.model_name,
-            max_tokens=1000,
-            tools=tools,
-            messages=messages
-        )
-        return extract_text(final_response)
-    return extract_text(response)
+    return "I'm having trouble completing this request after multiple tool calls."
 
 if __name__ == "__main__":
     # print("=== Test 1: SQL query ===")
     # answer1 = handle_query("椰子冻需要哪些食材？")
     # print(answer1)
 
-    print("\n=== Test 2: RAG search ===")
-    answer2 = handle_query("椰子冻要怎么做？")
-    print(answer2)
+    # print("\n=== Test 2: RAG search ===")
+    # answer2 = handle_query("椰子冻要怎么做？")
+    # print(answer2)
 
-    print("\n=== Test 3: temperature conversion ===")
-    answer3 = handle_query("350华氏度是多少摄氏度？")
-    print(answer3)
+    # print("\n=== Test 3: temperature conversion ===")
+    # answer3 = handle_query("350华氏度是多少摄氏度？")
+    # print(answer3)
+
+    # print("=== Claude ===")
+    # print(handle_query("椰子冻需要哪些食材？", backend_name="claude"))
+
+    print("\n=== Ollama (llama3.2:3b) ===")
+    print(handle_query("椰子冻需要哪些食材？", backend_name="llama"))
