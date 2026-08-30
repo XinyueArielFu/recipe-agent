@@ -51,6 +51,10 @@ class OllamaBackend(LLMBackend):
                 "stream": False,
             }
         )
+        # print("+++++++++++ Ollam Backend 'Message' debug +++++++++++++")
+        # result = response.json()
+        # message = result["message"]
+
         result = response.json()
         print("DEBUG - Ollama raw response:", result) 
         message = result["message"]

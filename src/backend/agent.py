@@ -13,12 +13,22 @@ TOOL_FUNCTIONS = {
     "search_recipe_notes": search_recipe_notes
 }
 
+OLLAMA_SYSTEM_PROMPT = (
+    "You are a recipe assistant. When a tool returns information about multiple recipes, "
+    "you must only extract and use information about the ONE recipe the user is asking about. "
+    "Completely ignore all other recipes in the tool output. "
+    "Do not mention any other recipe names in your answer."
+)
+
 def handle_query(user_query: str, backend_name: str = "claude", max_turns=5) -> str:
     backend = get_backend(backend_name)
 
     messages = [
         {"role": "user", "content": user_query}
     ]
+
+    if backend_name != "claude":
+        messages.insert(0, {"role": "system", "content": OLLAMA_SYSTEM_PROMPT})
 
     for turn in range(max_turns):
         print(f"\n--- Turn {turn + 1} messages sent to model ---")
@@ -78,13 +88,13 @@ if __name__ == "__main__":
     # print("\n=== Ollama (llama3.2:3b) ===")
     # print(handle_query("椰子冻需要哪些食材？", backend_name="llama"))
 
-    # print("=== Test 1: SQL query (llama3.2:3b) ===")
-    # answer1 = handle_query("椰子冻需要哪些食材？", backend_name="llama")
-    # print(answer1)
+    print("=== Test 1: SQL query (llama3.2:3b) ===")
+    answer1 = handle_query("椰子冻需要哪些食材？", backend_name="llama")
+    print(answer1)
 
-    # print("\n=== Test 2: RAG search (llama3.2:3b) ===")
-    # answer2 = handle_query("椰子冻要怎么做？", backend_name="llama")
-    # print(answer2)
+    print("\n=== Test 2: RAG search (llama3.2:3b) ===")
+    answer2 = handle_query("椰子冻要怎么做？", backend_name="llama")
+    print(answer2)
 
     print("\n=== Test 3: temperature conversion (llama3.2:3b) ===")
     answer3 = handle_query("350华氏度是多少摄氏度？", backend_name="llama")
