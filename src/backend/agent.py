@@ -21,6 +21,8 @@ def handle_query(user_query: str, backend_name: str = "claude", max_turns=5) -> 
     ]
 
     for turn in range(max_turns):
+        print(f"\n--- Turn {turn + 1} messages sent to model ---")
+        print(messages)
         result = backend.generate_with_tools(messages, tools)
 
         if result["stop_reason"] != "tool_use":
@@ -49,13 +51,13 @@ def handle_query(user_query: str, backend_name: str = "claude", max_turns=5) -> 
             })
         else:
             # because Ollam demand "content" has to be string instead of a dictionary object which Antheropic accepts
-            messages.append({"role": "assistant", "content": "", "tool_calls": result["raw_content"].get("tool_call", [])})
+            messages.append({"role": "assistant", "content": "", "tool_calls": result["raw_content"].get("tool_calls", [])})
             messages.append({
                 "role": "tool",
                 "content": str(tool_result)
             })
 
-    return "I'm having trouble completing this request after multiple tool calls."
+    return f"I'm having trouble completing this request after multiple tool calls. Exceed max turn limit {max_turns}"
 
 if __name__ == "__main__":
     # print("=== Test 1: SQL query ===")
@@ -73,5 +75,17 @@ if __name__ == "__main__":
     # print("=== Claude ===")
     # print(handle_query("椰子冻需要哪些食材？", backend_name="claude"))
 
-    print("\n=== Ollama (llama3.2:3b) ===")
-    print(handle_query("椰子冻需要哪些食材？", backend_name="llama"))
+    # print("\n=== Ollama (llama3.2:3b) ===")
+    # print(handle_query("椰子冻需要哪些食材？", backend_name="llama"))
+
+    # print("=== Test 1: SQL query (llama3.2:3b) ===")
+    # answer1 = handle_query("椰子冻需要哪些食材？", backend_name="llama")
+    # print(answer1)
+
+    # print("\n=== Test 2: RAG search (llama3.2:3b) ===")
+    # answer2 = handle_query("椰子冻要怎么做？", backend_name="llama")
+    # print(answer2)
+
+    print("\n=== Test 3: temperature conversion (llama3.2:3b) ===")
+    answer3 = handle_query("350华氏度是多少摄氏度？", backend_name="llama")
+    print(answer3)
