@@ -17,6 +17,7 @@ _collection = _client.get_collection("mom_recipe_notes")
 
 ####### 1. convert temperature F <--> C ############
 def convert_temperature(value: float, from_unit: str) -> float:
+    value = float(value)
     if from_unit.upper() == "F":
         return round((value - 32) * 5 / 9, 0) 
     elif from_unit.upper() == "C":
