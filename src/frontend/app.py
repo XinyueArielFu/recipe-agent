@@ -1,6 +1,19 @@
 import streamlit as st
 import requests
 
+APP_PASSWORD = "Tinawangchina"
+
+if "authenticated" not in st.session_state:
+    st.session_state.authenticated = False
+
+if not st.session_state.authenticated:
+    pwd = st.text_input("请输入密码 / Enter password", type="password")
+    if pwd == APP_PASSWORD:
+        st.session_state.authenticated = True
+        st.rerun()
+    else:
+        st.stop()
+
 st.title("Tina's Recipe Agent")
 
 backend_choice = st.selectbox("选择模型 / Choose Model", ["claude", "llama"])
