@@ -19,6 +19,7 @@ deployed agent interface.
 | Frontend | Streamlit |
 
 ## Project Structure
+```
 recipe-agent/
 ├── data/ # Raw recipe JSON + SQLite database
 ├── src/
@@ -27,6 +28,7 @@ recipe-agent/
 │ ├── ml/ # KMeans clustering experiments
 │ └── backend/ # LLM backend abstraction, agent routing, FastAPI service
 └── frontend/ # Streamlit UI
+```
 
 
 ## Key Design Decisions & Technical Highlights
