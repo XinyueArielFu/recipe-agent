@@ -37,30 +37,38 @@ def handle_query(user_query: str, backend_name: str = "claude", max_turns=5) -> 
 
         if result["stop_reason"] != "tool_use":
             return result["text"]
-        
-        # FOR NOW: only take the first tool request
-        tool_name = result["tool_name"]
-        tool_input = result["tool_input"]
-
-        print(f"[Turn {turn + 1}] Agent decided to call: {tool_name}({tool_input})")
-
-        tool_function = TOOL_FUNCTIONS[tool_name]
-        tool_result = tool_function(**tool_input)
 
         if "tool_use_id" in result:
+            # Claude: handle ALL tool_use blocks in this turn, not just the first tool
+            tool_blocks = [block for block in result["raw_content"] if block.type == "tool_use"]
+
+            tool_results_content = []
+            for block in tool_blocks:
+                tool_name = block.name
+                tool_input = block.input
+                print(f"[Turn {turn + 1}] Agent decided to call: {tool_name}({tool_input})")
+
+                tool_function = TOOL_FUNCTIONS[tool_name]
+                tool_result = tool_function(**tool_input)
+
+                tool_results_content.append({
+                    "type": "tool_result",
+                    "tool_use_id": block.id,
+                    "content": str(tool_result)
+                })
+
             messages.append({"role": "assistant", "content": result["raw_content"]})
-            messages.append({
-                "role": "user", 
-                "content": [
-                    {
-                        "type": "tool_result",
-                        "tool_use_id": result["tool_use_id"],
-                        "content": str(tool_result)
-                    }
-                ]
-            })
+            messages.append({"role": "user", "content": tool_results_content})
         else:
+            # Ollama: keep the exsisting single-tool-call logic 
             # because Ollam demand "content" has to be string instead of a dictionary object which Antheropic accepts
+            tool_name = result["tool_name"]
+            tool_input = result["tool_input"]
+            print(f"[Turn {turn + 1}] Agent decided to call: {tool_name}({tool_input})")
+
+            tool_function = TOOL_FUNCTIONS[tool_name]
+            tool_result = tool_function(**tool_input)
+            
             messages.append({"role": "assistant", "content": "", "tool_calls": result["raw_content"].get("tool_calls", [])})
             messages.append({
                 "role": "tool",
