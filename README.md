@@ -9,16 +9,16 @@ deployed agent interface.
 ## Demo
 
 **English query — structured recipe lookup:**
-![English query demo](assets/demo/02_english_query_coconut_jelly.gif)
+![English query demo](demo/02_english_query_coconut_jelly.gif)
 
 **Browsing the full recipe collection:**
-![Browse recipes demo](assets/demo/03_browse_all_recipes.gif)
+![Browse recipes demo](demo/03_browse_all_recipes.gif)
 
 **中文提问 — bilingual support:**
-![Chinese query demo](assets/demo/04_chinese_query_mango_box.gif)
+![Chinese query demo](demo/04_chinese_query_mango_box.gif)
 
 **Component reuse (BOM-style sub-recipes) in action:**
-![Mango box full answer](assets/demo/05_mango_box_full_answer.gif)
+![Mango box full answer](demo/05_mango_box_full_answer.gif)
 
 ## Tech Stack
 
