@@ -3,8 +3,8 @@
 A full-stack AI Agent project combining a relational database, RAG-based
 vector search, ML clustering, and a multi-LLM-backend tool-calling agent.
 Built on 17 real, hand-digitized family recipes (bilingual, Chinese/English)
-to demonstrate end-to-end AI/ML engineering — from data modeling to a
-deployed agent interface.
+to demonstrate end-to-end AI/ML engineering — from data modeling to an
+interactive agent interface.
 
 ## Demo
 
